@@ -1,2 +1,0 @@
-this is a temp file to be deleted once the new files have been pasted into the
-repo
