@@ -41,6 +41,7 @@ nav > ul > li:last-of-type {
 
 nav > ul > li > a {
     text-decoration: none;
+    display: block;
 }
 
 h2 {
