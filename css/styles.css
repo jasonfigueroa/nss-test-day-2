@@ -14,11 +14,12 @@ body {
 
 header {
     text-align: center;
-    margin: .5em 0;
+    padding: .5em 0;
 }
 
 nav {
     width: 100%;
+    background-color: whitesmoke;
 }
 
 nav > ul {
@@ -31,7 +32,7 @@ nav > ul {
 nav > ul > li {
     padding-top: .25em;
     padding-bottom: .25em;
-    border: 1.5px solid #222;
+    border: .5px solid #222;
     border-bottom-style: none;
 }
 
@@ -59,4 +60,36 @@ a {
 
 a:hover {
     color: #0FA0CE;
+}
+
+/* Media Queries */
+
+@media (min-width: 569px) {
+    
+    nav {
+        height: 100%;
+        width: 30%;
+        margin-right: 0;
+        position: fixed;
+        /* background-color: whitesmoke; */
+    }
+
+    header {
+        margin-top: 100%;
+    }
+
+    nav > ul > li {
+        /* border-color: #1EAEDB; */
+        /* border-width: .5px; */
+    }
+
+    .container {
+        margin-left: 30%;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+    
+    h2:first-of-type {
+        margin-top: 0;
+    }
 }
