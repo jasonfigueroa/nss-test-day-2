@@ -19,7 +19,7 @@ header {
 
 nav {
     width: 100%;
-    background-color: whitesmoke;
+    background-color: #A6A6A6;
 }
 
 nav > ul {
@@ -32,7 +32,7 @@ nav > ul {
 nav > ul > li {
     padding-top: .25em;
     padding-bottom: .25em;
-    border: .5px solid #222;
+    border: .25px solid #646464;
     border-bottom-style: none;
 }
 
@@ -43,6 +43,7 @@ nav > ul > li:last-of-type {
 nav > ul > li > a {
     text-decoration: none;
     display: block;
+    color: #FFF;
 }
 
 h2 {
@@ -62,31 +63,79 @@ a:hover {
     color: #0FA0CE;
 }
 
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* blockquote > p {
+    text-align: center;
+} */
+
+/* blockquote > footer {
+    text-align: right;
+    margin-right: 3em;
+} */
+
 /* Media Queries */
 
 @media (min-width: 569px) {
     
-    nav {
-        height: 100%;
-        width: 30%;
-        margin-right: 0;
-        position: fixed;
-        /* background-color: whitesmoke; */
+    body {
+        font-size: 1.25em;
     }
 
     header {
-        margin-top: 100%;
+        padding-left: 2em;
+        padding-top: 10px;
+        padding-bottom: 0;
+        float: left;
+        height: 100%;
+
     }
 
-    nav > ul > li {
-        /* border-color: #1EAEDB; */
-        /* border-width: .5px; */
+    nav {
+        height: 55px;
+        width: 100%;
+        /* width: 30%; */
+        margin-right: 0;
+        position: fixed;
+        /* background-color: whitesmoke; */        
     }
+
+    nav > ul {
+        float: right;
+        padding-right: 2em;
+        height: 100%;
+        /* padding-top: 10px; */
+        /* padding-bottom: 10px; */
+    }
+    
+    nav > ul > li {
+        float: left;
+        /* border-bottom-style: solid; */
+        border: 0;
+        height: 100%;
+        padding: 0;
+        /* padding-top: 10px; */
+        padding-bottom: 0;
+        /* margin-right: 20px; */
+    }
+
+    nav > ul > li > a {
+        padding: 10px 1em;
+    }
+
+    /* nav > ul > li:last-of-type {
+        margin-right: 0;
+    } */
 
     .container {
-        margin-left: 30%;
-        padding-left: 1em;
-        padding-right: 1em;
+        /* margin-left: 30%; */
+        padding-top: 65px;
+        padding-left: 3em;
+        padding-right: 3em;
     }
     
     h2:first-of-type {
