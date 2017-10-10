@@ -69,15 +69,6 @@ a:hover {
     clear: both;
 }
 
-/* blockquote > p {
-    text-align: center;
-} */
-
-/* blockquote > footer {
-    text-align: right;
-    margin-right: 3em;
-} */
-
 /* Media Queries */
 
 @media (min-width: 569px) {
@@ -140,5 +131,48 @@ a:hover {
     
     h2:first-of-type {
         margin-top: 0;
+    }
+}
+
+@media (min-width: 1023px) and (orientation: landscape){
+    header {
+        padding-left: 6em;
+    }
+
+    nav > ul {
+        padding-right: 6em;
+    }
+
+    .container {        
+        padding-left: 8em;
+        padding-right: 8em;
+    }
+}
+
+@media (min-width: 1279px) {
+    header {
+        padding-left: 10em;
+    }
+
+    nav > ul {
+        padding-right: 10em;
+    }
+    .container {        
+        padding-left: 12em;
+        padding-right: 12em;
+    }
+}
+
+@media (min-width: 1919px) {
+    header {
+        padding-left: 18em;
+    }
+
+    nav > ul {
+        padding-right: 18em;
+    }
+    .container {        
+        padding-left: 20em;
+        padding-right: 20em;
     }
 }
