@@ -17,6 +17,16 @@ header {
     padding: .5em 0;
 }
 
+header a {
+    text-decoration: none;
+    display: block;
+    color: #222;
+}
+
+header a:hover {
+    color: #222;
+}
+
 nav {
     width: 100%;
     background-color: #A6A6A6;
